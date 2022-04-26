@@ -15,7 +15,7 @@
 
     // Variáveis:
     $hoje = date('d/m/Y');
-    $idade = 27;
+    $idade = date('Y') - 1994;
 
     // Contantes:
     const MEU_NOME = "Alan Sobreira";
