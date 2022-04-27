@@ -14,21 +14,19 @@
     <hr>
 
     <?php
-    $salario1 = 900;
-
+    $salario1 = 1900;
 
     $salario2 = $salario1 * 1.15;
     $salario3 = $salario1 * 1.10;
     $salario4 = $salario1 * 1.05;
 
     if ($salario1 < 500) {
-        echo "<p> O salário é de $salario1, portanto o aumento é de 15%, resultando em  R$ $salario2.";
+        echo "<p> O salário é de R$ $salario1, portanto o aumento é de 15%, resultando em R$ $salario2.</p>";
     } elseif ($salario1 <= 1000) {
-        echo "<p> O salário é de $salario1, portanto o aumento é de 10%, resultando em  R$ $salario3.";
+        echo "<p> O salário é de R$ $salario1, portanto o aumento é de 10%, resultando em  R$ $salario3.</p>";
     } else {
-        echo "<p> O salário é de $salario1, portanto o aumento é de 5%, resultando em R$ $salario4.";
+        echo "<p> O salário é de R$ $salario1, portanto o aumento é de 5%, resultando em R$ $salario4.</p>";
     }
-    
     ?>
 
 </body>
