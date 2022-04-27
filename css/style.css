@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+article {
+    display: flex;
+}
+
+section {
+    margin: auto;
+}
