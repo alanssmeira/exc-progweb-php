@@ -41,13 +41,35 @@
 
         if ($salario < 500) {
             echo $novoSalario = $salario * 1.15;
+
         } elseif ($salario <= 1000) {
             echo $novoSalario = $salario * 1.10;
+
         } else {
-            echo $novoSalario = $salario * 1.05;
+            $novoSalario = $salario * 1.05;
         }
+
+        // refatoração - um cód que serve para toda a condicional
+        echo "<p> O salário é de R$ $salario, portanto o aumento é de 5%, resultando em R$ $novoSalario.</p>";
         
     ?>
+
+    <!-- Equivalente ao echo, mas mais adequado para deixar o PHP que roda no srevidor mais leve -->
+    <p>O salário é de R$ <?=$salario?>, portanto o aumento é de 5%, resultando em R$ <?=$novoSalario?>.</p>
+
+    <!-- 
+        number_format(
+            valor,
+            quantidade de casas decimais,
+            "separador de casa decimal"
+            "separador de milhar"
+        )
+     -->
+
+     <p>
+         R$ <?=number_format($salario, 2, ",", ".")?>
+          e R$ <?=number_format($novoSalario, 2, ",", ".")?>
+    </p>
 
 </body>
 
