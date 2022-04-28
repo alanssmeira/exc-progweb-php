@@ -19,6 +19,7 @@
     $salario2 = $salario1 * 1.15;
     $salario3 = $salario1 * 1.10;
     $salario4 = $salario1 * 1.05;
+    // as fórmulas no começo faz com que todos os calculos sejam processados antes das condiionais
 
     if ($salario1 < 500) {
         echo "<p> O salário é de R$ $salario1, portanto o aumento é de 15%, resultando em R$ $salario2.</p>";
@@ -27,6 +28,25 @@
     } else {
         echo "<p> O salário é de R$ $salario1, portanto o aumento é de 5%, resultando em R$ $salario4.</p>";
     }
+    ?>
+
+    <!-- ******************** CORREÇÃO ******************** -->
+
+    <?php
+
+        $salario = 800;
+
+        // Obs.: declarar esta variável inicialmente é algo opcional
+        $novoSalario = 0;
+
+        if ($salario < 500) {
+            $novoSalario = $salario * 1.15;
+        } elseif ($salario <= 1000) {
+            $novoSalario = $salario * 1.10;
+        } else {
+            $novoSalario = $salario * 1.05;
+        }
+        
     ?>
 
 </body>
