@@ -34,17 +34,17 @@
 
     <?php
 
-        $salario = 800;
+        $salario = 1900;
 
         // Obs.: declarar esta variável inicialmente é algo opcional
         $novoSalario = 0;
 
         if ($salario < 500) {
-            $novoSalario = $salario * 1.15;
+            echo $novoSalario = $salario * 1.15;
         } elseif ($salario <= 1000) {
-            $novoSalario = $salario * 1.10;
+            echo $novoSalario = $salario * 1.10;
         } else {
-            $novoSalario = $salario * 1.05;
+            echo $novoSalario = $salario * 1.05;
         }
         
     ?>
